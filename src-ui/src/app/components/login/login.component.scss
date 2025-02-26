@@ -1,0 +1,57 @@
+.login-container {
+    // background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.btn {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 12px;
+}
+
+.form-group_lable {
+    margin-bottom: 8px;
+}
+
+.danger-noti {
+    margin-top: 4px;
+}
+
+.form-group_input {
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    width: 100%;
+
+    &:focus {
+        box-shadow: none;
+        background-color: transparent;
+    }
+}
+
+.btn-control {
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-login {
+    margin-top: -10%;
+}
+
+.form-group-item {
+    display: flex;
+    gap: 8px;
+    height: 36px;
+    align-items: center;
+    line-height: 0.5;
+}
+
+.btn-ctrl-pass {
+    cursor: pointer;
+}
