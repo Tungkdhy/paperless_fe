@@ -4,11 +4,11 @@
 
 export const environment = {
   production: false,
-  apiBaseUrl: 'http://0.0.0.0:8000/api/',
+  apiBaseUrl: 'http://222.252.98.195:10000/api/',
   apiVersion: '5',
   appTitle: 'VNS EDoc',
   version: 'DEVELOPMENT',
-  webSocketHost: 'http://0.0.0.0:8000/',
+  webSocketHost: '222.252.98.195:10000',
   webSocketProtocol: 'ws:',
   webSocketBaseUrl: '/ws/',
 }

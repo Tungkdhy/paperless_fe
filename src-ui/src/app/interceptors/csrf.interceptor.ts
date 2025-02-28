@@ -26,25 +26,17 @@ export class CsrfInterceptor implements HttpInterceptor {
     }
     let csrfToken = this.cookieService.get(`csrftoken`)
     let token = localStorage.getItem("token")
-    if(token){
+   
       request = request.clone({
         setHeaders: {
           'authorization': `Token be2e244ddd38653d8901c4e827f8cc539b33d0a2`,
+          // "Content-Type":"application/json"
         },
       })
 
 
     return next.handle(request)
-    }
-    else{
-      request = request.clone({
-        setHeaders: {
-          "Content-Type":"application/json"
-        },
-      })
-
-
-    return next.handle(request)
-    }
+   
+   
   }
 }

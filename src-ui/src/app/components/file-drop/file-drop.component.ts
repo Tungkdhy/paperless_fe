@@ -84,8 +84,11 @@ export class FileDropComponent {
 
   public dropped(files: NgxFileDropEntry[]) {
     this.uploadDocumentsService.onNgxFileDrop(files)
+    console.log(files);
+    
     if (files.length > 0)
       this.toastService.showInfo($localize`Initiating upload...`, 3000)
+    
   }
 
   @HostListener('window:blur', ['$event']) public onWindowBlur() {
