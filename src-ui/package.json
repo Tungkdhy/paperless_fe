@@ -26,6 +26,8 @@
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3",
     "file-saver": "^2.0.5",
+    "filesize": "9.0.1",
+    "lodash-es": "^4.17.21",
     "mime-names": "^1.0.0",
     "ngx-bootstrap-icons": "^1.9.3",
     "ngx-color": "^9.0.0",
