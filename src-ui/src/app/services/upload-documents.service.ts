@@ -46,6 +46,8 @@ export class UploadDocumentsService {
       .subscribe({
         next: (event) => {
           if (event.type == HttpEventType.UploadProgress) {
+            console.log("zo",event);
+            
             status.updateProgress(
               FileStatusPhase.UPLOADING,
               event.loaded,
@@ -53,9 +55,17 @@ export class UploadDocumentsService {
             )
             status.message = $localize`Uploading...`
           } else if (event.type == HttpEventType.Response) {
+            console.log(event);
+            
             status.taskId = event.body['task_id']
             status.message = $localize`Upload complete, waiting...`
             this.uploadSubscriptions[file.name]?.complete()
+            
+            status.updateProgress(
+              FileStatusPhase.SUCCESS,
+              // event.loaded,
+              // event.total
+            )
           }
         },
         error: (error) => {

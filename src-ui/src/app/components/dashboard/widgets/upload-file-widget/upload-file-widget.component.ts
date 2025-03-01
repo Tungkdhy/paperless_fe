@@ -91,6 +91,7 @@ export class UploadFileWidgetComponent extends ComponentWithPermissions {
   }
 
   isFinished(status: FileStatus) {
+    
     return (
       status.phase == FileStatusPhase.FAILED ||
       status.phase == FileStatusPhase.SUCCESS

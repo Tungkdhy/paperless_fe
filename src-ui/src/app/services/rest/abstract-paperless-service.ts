@@ -61,7 +61,7 @@ export abstract class AbstractPaperlessService<T extends ObjectWithId> {
  
       //  'Content-Type':  'application/json',
  
-      'authorization': `vinorsoft ${localStorage.getItem('token')}`,
+      'authorization': `Token be2e244ddd38653d8901c4e827f8cc539b33d0a2`,
  
       })};
     return this.http.get<Results<T>>(this.getResourceUrl(), {
@@ -115,7 +115,7 @@ export abstract class AbstractPaperlessService<T extends ObjectWithId> {
  
       //  'Content-Type':  'application/json',
  
-      'authorization': `vinorsoft ${localStorage.getItem('token')}`,
+      'authorization': `Token be2e244ddd38653d8901c4e827f8cc539b33d0a2`,
  
       })};
     return this.http.get<Results<T>>(this.getResourceUrl(), {
@@ -135,7 +135,7 @@ export abstract class AbstractPaperlessService<T extends ObjectWithId> {
  
       //  'Content-Type':  'application/json',
  
-      'authorization': `vinorsoft ${localStorage.getItem('token')}`,
+      'authorization': `Token be2e244ddd38653d8901c4e827f8cc539b33d0a2`,
  
       })};
     return this.http.get<T>(this.getResourceUrl(id),{...httpOptions})
@@ -154,7 +154,7 @@ export abstract class AbstractPaperlessService<T extends ObjectWithId> {
  
       //  'Content-Type':  'application/json',
  
-      'authorization': `vinorsoft ${localStorage.getItem('token')}`,
+      'authorization': `Token be2e244ddd38653d8901c4e827f8cc539b33d0a2`,
  
       })})
   }

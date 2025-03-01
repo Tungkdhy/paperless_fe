@@ -154,7 +154,7 @@ export class DocumentService extends AbstractPaperlessService<Document> {
  
       //  'Content-Type':  'application/json',
  
-      'authorization': `vinorsoft ${localStorage.getItem('token')}`,
+      'Authorization': `Token be2e244ddd38653d8901c4e827f8cc539b33d0a2`,
  
       })};
     return this.http.get<Document>(this.getResourceUrl(id), {
@@ -193,7 +193,7 @@ export class DocumentService extends AbstractPaperlessService<Document> {
  
       //  'Content-Type':  'application/json',
  
-      'authorization': `vinorsoft ${localStorage.getItem('token')}`,
+      'Authorization': `Token be2e244ddd38653d8901c4e827f8cc539b33d0a2`,
  
       })};
     return this.http.get<number>(this.getResourceUrl(null, 'next_asn'),{...httpOptions})
@@ -223,7 +223,7 @@ export class DocumentService extends AbstractPaperlessService<Document> {
  
       //  'Content-Type':  'application/json',
  
-      'authorization': `vinorsoft ${localStorage.getItem('token')}`,
+      'Authorization': `Token be2e244ddd38653d8901c4e827f8cc539b33d0a2`,
  
       })};
     return this.http.get<DocumentMetadata>(this.getResourceUrl(id, 'metadata'),{...httpOptions})
@@ -236,7 +236,7 @@ export class DocumentService extends AbstractPaperlessService<Document> {
  
       //  'Content-Type':  'application/json',
  
-      'authorization': `vinorsoft ${localStorage.getItem('token')}`,
+      'Authorization': `Token be2e244ddd38653d8901c4e827f8cc539b33d0a2`,
  
       })};
     return this.http.post(this.getResourceUrl(null, 'bulk_edit'), {
@@ -253,7 +253,7 @@ export class DocumentService extends AbstractPaperlessService<Document> {
  
       //  'Content-Type':  'application/json',
  
-      'authorization': `vinorsoft ${localStorage.getItem('token')}`,
+      'Authorization': `Token be2e244ddd38653d8901c4e827f8cc539b33d0a2`,
  
       })};
     return this.http.post<SelectionData>(
@@ -280,7 +280,7 @@ export class DocumentService extends AbstractPaperlessService<Document> {
  
       //  'Content-Type':  'application/json',
  
-      'authorization': `vinorsoft ${localStorage.getItem('token')}`,
+      'Authorization': `Token be2e244ddd38653d8901c4e827f8cc539b33d0a2`,
  
       })};
     return this.http.post(

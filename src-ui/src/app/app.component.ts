@@ -62,7 +62,7 @@ export class AppComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
-    if (localStorage.getItem('token')) {
+   
       // window.location.reload()
       
 
@@ -241,7 +241,7 @@ export class AppComponent implements OnInit, OnDestroy {
           }, 500)
         })
       })
-    }
+    
     return;
 
 
